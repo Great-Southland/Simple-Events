@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     require_once plugin_dir_path( __FILE__ ) . 'core/event-fh.php';
 //Display Files
     require_once plugin_dir_path( __FILE__ ) . 'public/display/carousel.php';
-    require_once plugin_dir_path( __FILE__ ) . 'public/display/delete.php';
+    require_once plugin_dir_path( __FILE__ ) . 'public/display/event-manager.php';
 //Form Files
     require_once plugin_dir_path( __FILE__ ) . 'public/forms/event.php';
 
