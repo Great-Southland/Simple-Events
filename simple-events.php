@@ -21,12 +21,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 // Core Files/Functionality
 	require_once plugin_dir_path( __FILE__ ) . 'core/functions.php';
-    require_once plugin_dir_path( __FILE__ ) . 'core/create-event-fh.php';
+    require_once plugin_dir_path( __FILE__ ) . 'core/event-fh.php';
 //Display Files
     require_once plugin_dir_path( __FILE__ ) . 'public/display/carousel.php';
-    require_once plugin_dir_path( __FILE__ ) . 'public/display/list.php';
+    require_once plugin_dir_path( __FILE__ ) . 'public/display/delete.php';
 //Form Files
-    require_once plugin_dir_path( __FILE__ ) . 'public/forms/create-event.php';
+    require_once plugin_dir_path( __FILE__ ) . 'public/forms/event.php';
 
 // enqueue styles frontend
 	require_once plugin_dir_path( __FILE__ ) . 'public/enqueue-public.php';
@@ -34,8 +34,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 // ----------------- include plugin dependencies: admin only ----------------
 if ( is_admin() ) {
-
 	// require_once plugin_dir_path( __FILE__ ) . 'PATH';
+	// Admin Menu
+	require_once plugin_dir_path( __FILE__ ) . 'admin/admin-menu.php';
+	require_once plugin_dir_path( __FILE__ ) . 'admin/settings-callbacks.php';
+	require_once plugin_dir_path( __FILE__ ) . 'admin/settings-page.php';
+	require_once plugin_dir_path( __FILE__ ) . 'admin/settings-register.php';
+	require_once plugin_dir_path( __FILE__ ) . 'admin/settings-validate.php';
 }
 
 //============ This Function Runs when plugin is activated ===============
@@ -44,3 +49,10 @@ function plugin_activated(){
         require_once plugin_dir_path( __FILE__ ) . 'core/init.php';
 }
 register_activation_hook(__FILE__, 'plugin_activated');
+
+// ============ default plugin options ============
+function se_options_default() {
+	return array(
+		'event_control_url'     => 'https://www.example.com',
+	);
+}

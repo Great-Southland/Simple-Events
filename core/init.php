@@ -23,3 +23,6 @@ $sql = "CREATE TABLE `{$wpdb->prefix}simple_events` (
 
 require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
 dbDelta($sql);
+
+//============== add option ================
+add_option('se_settings');

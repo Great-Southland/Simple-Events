@@ -23,7 +23,7 @@ function events_carousel(){
         $event_count = 0;
         $event_count_a = [];
         $output = '';
-        $output .= '<div class="events-container alignfull">';
+        $output .= '<div class="se-carousel-events-container alignfull">';
 
     //------------------------ Proccess Data -----------------------
 

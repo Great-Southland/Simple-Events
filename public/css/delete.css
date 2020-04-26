@@ -1,0 +1,92 @@
+/* CSS for Delete Event Page */
+
+.se-delete-events-container {
+    max-width: 150rem !important;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-gap: 5rem;
+    grid-template-columns: auto auto auto;
+}
+
+.se-delete-events-container .event-date {
+    z-index: 1;
+    color: rgba(0,0,0,0.6);
+    font-size: 2rem;
+    font-style: italic;
+    letter-spacing: 0.1rem !important;
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif !important;
+    margin: 0;
+    position: relative;
+    text-align: center;
+}
+
+.se-delete-events-container .event-title {
+    color: rgba(0,0,0,1);
+    font-size: 6rem;
+    font-weight: 600;
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif !important;
+    margin: 0;
+    text-align: center;
+}
+
+.se-delete-events-container .event-description {
+    z-index: 1;
+    color: rgba(255,255,255,0.8);
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+.se-delete-events-container .se-event-container {
+    max-width: 40rem;
+}
+
+.se-delete-events-container .se-event-bg {
+    padding: 2rem;
+}
+
+/* Edit/Delete Event Btn */
+.se-delete-events-container .btn {
+    text-align: center;
+}
+
+.se-delete-events-container .btn-edit {
+    background-color: rgb(0, 164, 219);
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 7px;
+}
+
+.se-delete-events-container .btn-edit:hover {
+    background-color: rgb(0, 150, 200);
+}
+
+.se-delete-events-container .btn-delete {
+    background-color: rgb(200,21,32);
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 7px;
+}
+
+.se-delete-events-container .btn-delete:hover {
+    background-color: rgb(180,21,32);
+}
+
+/* Create Event Btn */
+.se-create-event-btn {
+    text-align: center;
+}
+
+.se-create-event-btn .btn-create {
+    background-color: rgb(60, 201, 0);
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 7px;
+}
+
+.se-create-event-btn .btn-create:hover {
+    background-color: rgb(51, 171, 0);
+}
