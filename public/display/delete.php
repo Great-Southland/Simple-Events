@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 //================== Function which outputs html for carousel ===============
-function events_delete(){
+function se_events_manager(){
 // -------------------- Get Data -------------------
     //include wpdb class
     global $wpdb;
@@ -65,4 +65,4 @@ function events_delete(){
     }
     return $output;
 }
-add_shortcode('events_delete', 'events_delete');
+add_shortcode('se_events_manager', 'se_events_manager');

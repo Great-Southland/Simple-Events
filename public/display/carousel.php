@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 //================== Function which outputs html for carousel ===============
-function events_carousel(){
+function se_events_carousel(){
 // -------------------- Get Data -------------------
     //include wpdb class
     global $wpdb;
@@ -70,4 +70,4 @@ function events_carousel(){
 
     return $output;
 }
-add_shortcode('events_carousel', 'events_carousel');
+add_shortcode('se_events_carousel', 'se_events_carousel');
