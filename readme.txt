@@ -20,5 +20,5 @@ This plugin comes with 3 shortcodes
 The page where you put your [se_event_form] shortcode needs to be specified in Admin > Simple Events admin page.
 
 The plugin creates a database table called wp_simple_events this is where the events will be stored.
-It also creates a option in the wp_options table to store the [se_event_form] url.
+It also creates a option in the wp_options table to store the [se_event_form] page url.
 Files will be uploaded to wp-content > uploads > <current-year> > <current-month>.
