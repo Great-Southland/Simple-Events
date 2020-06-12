@@ -1,6 +1,6 @@
 # Simple Events For WordPress
 
-A plugin for creating and deleting events, Displaying them as a carousel.
+A plugin for creating and deleting events and displaying them as a carousel.
 
 ### How to install
 
